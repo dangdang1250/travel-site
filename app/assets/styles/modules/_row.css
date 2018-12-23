@@ -1,6 +1,5 @@
 .row{
 	
-	background-color: yellow;
 	@mixin clearfix;
 	
 	&--gutters {
@@ -8,6 +7,10 @@
 	}
 
 	@mixin atMedium{
+		
+		&__b-margin-until-medium{
+			margin-bottom: 0rem;
+		}
 		
 		&__medium--4{
 		float:left;
@@ -30,5 +33,9 @@
 
 	&--gutters > div{
 		padding-right: 65px;
+	}
+
+	&__b-margin-until-medium {
+		margin-bottom: 1rem;
 	}
 }
