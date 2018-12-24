@@ -45,8 +45,29 @@
 	&--gutters-large > div{
 		padding-right: 100px;
 	}
+	&--gutters-small {
+		margin-right: -45px;
+	}
 
+	&--gutters-small > div {
+		margin-right: -45px;
+	}
 	&__b-margin-until-medium {
 		margin-bottom: 1rem;
+	}
+
+	&--t-padding{
+		padding-top: 80px;
+	}
+
+	/* Begin Equal Height Rules*/
+	&--equal-height{
+		@mixin atMedium{
+			display: flex;
+		}
+		& > div{
+			float:none;
+			display: flex;
+		}
 	}
 }
