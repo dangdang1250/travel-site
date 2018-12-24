@@ -93,7 +93,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("//Need to install webpack \n\n// import jquery package\n\nvar $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\nvar Person = __webpack_require__(/*! ./modules/Person */ \"./app/assets/scripts/modules/Person.js\"); //you don't need .js \n\n//alert(\"It is refresh by it self now.\");\nvar john = new Person(\"John\",\"blue\");\njohn.greet();\nvar jane = new Person(\"Jane\",\"green\");\njane.greet();\n\n//$(\"h1\").remove();\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
+"use strict";
+eval("\n\n//Need to install webpack \n\n// import jquery package\n\nvar $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\nvar Person = __webpack_require__(/*! ./modules/Person */ \"./app/assets/scripts/modules/Person.js\"); //you don't need .js \n\n//alert(\"It is refresh by it self now.\");\nvar john = new Person(\"John\", \"blue\");\njohn.greet();\nvar jane = new Person(\"Jane\", \"green\");\njane.greet();\n\n//$(\"h1\").remove();\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
 
 /***/ }),
 
@@ -102,9 +103,10 @@ eval("//Need to install webpack \n\n// import jquery package\n\nvar $ = __webpac
   !*** ./app/assets/scripts/modules/Person.js ***!
   \**********************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("/* reusable blue print construcure function*/\nfunction Person(fullName,favColor) {\n\tthis.name = fullName;\n\tthis.favColor = favColor;\n\tthis.greet = function(){\n\t\tconsole.log(\"Hello, my name is \" + this.name +\" and my faverite color is \" + this.favColor +\"!\" );\n\t}\n}\n\nmodule.exports = Person;\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/Person.js?");
+"use strict";
+eval("\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\n/* reusable blue print construcure function*/\nvar Person = function () {\n\tfunction Person(fullName, favColor) {\n\t\t_classCallCheck(this, Person);\n\n\t\tthis.name = fullName;\n\t\tthis.favColor = favColor;\n\t}\n\n\t_createClass(Person, [{\n\t\tkey: \"greet\",\n\t\tvalue: function greet() {\n\t\t\tconsole.log(\"Hi, my name is \" + this.name + \" and my faverite color is \" + this.favColor + \"!\");\n\t\t}\n\t}]);\n\n\treturn Person;\n}();\n\nmodule.exports = Person;\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/Person.js?");
 
 /***/ }),
 
