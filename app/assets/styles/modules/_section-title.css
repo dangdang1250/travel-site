@@ -13,12 +13,13 @@
 		color:$mainBlue;
 	}
 
-	&__icon{
+	&__icon {
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: auto;
 		display: block;
-
+		position: absolute; 
+		
 		@mixin atSmall{
 			position: relative;
 			top: 8px;
