@@ -377,6 +377,7 @@ a {
 	}
 
 .large-hero__text_content {
+		padding-top: 60px;
 	position: absolute;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
@@ -940,6 +941,10 @@ a {
 		position: absolute;
 		background-color: #2f5572;
 		padding: 25px 36px;
+	}
+
+.site-header__logo__graphic {
+		text-indent: -9999px;
 	}
 
 .site-footer{
