@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("//Need to install webpack \n\n// import jquery package\nvar $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\nvar Person = __webpack_require__(/*! ./modules/Person */ \"./app/assets/scripts/modules/Person.js\"); //you don't need .js \n\nvar john = new Person(\"John\",\"blue\");\njohn.greet();\nvar jane = new Person(\"Jane\",\"green\");\njane.greet();\n\n$(\"h1\").remove();\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
+eval("//Need to install webpack \n\n// import jquery package\n\nvar $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\nvar Person = __webpack_require__(/*! ./modules/Person */ \"./app/assets/scripts/modules/Person.js\"); //you don't need .js \n\n//alert(\"It is refresh by it self now.\");\nvar john = new Person(\"John\",\"blue\");\njohn.greet();\nvar jane = new Person(\"Jane\",\"green\");\njane.greet();\n\n//$(\"h1\").remove();\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
 
 /***/ }),
 
