@@ -541,6 +541,17 @@ a {
 	}
 	}
 
+.page-section--no-b-until-large {
+		padding-bottom: 0;
+	}
+
+@media(min-width: 1010px){
+
+.page-section--no-b-until-large {
+			padding-bottom: 4.5em
+	}
+	}
+
 .headline{
 	font-size:1.9rem;
 	font-weight: 300;
