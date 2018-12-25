@@ -914,10 +914,14 @@ a {
     margin: .25rem 0 1rem 0;
   }
 
-/*Testing */
+/* Do not edit modules/_sprite directly  */
 
 .icon{
 		background-image:url('/assets/images/sprites/sprite-d675eadb.svg');
+	}
+
+.no-svg .icon{
+		background-image:url('/assets/images/sprites/sprite-d675eadb.png');
 	}
 
 .icon--clear-view-escapes {
